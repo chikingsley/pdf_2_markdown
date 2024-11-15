@@ -1,0 +1,35 @@
+# PDF to Markdown Converter Configuration
+
+[app]
+title = "PDF/Text to Markdown Converter"
+version = "1.0.0"
+max_file_size_mb = 50
+
+[processing]
+# Minimum font size to consider as a heading
+heading_font_size = 12
+# Maximum length for a heading (in characters)
+max_heading_length = 100
+
+[cleaning]
+# Enable/disable specific cleaning features
+remove_headers_footers = true
+remove_page_numbers = true
+remove_urls = true
+remove_emails = true
+preserve_lists = true
+preserve_tables = true
+
+[output]
+# Include metadata in output
+include_metadata = true
+# Include cleaning statistics
+include_stats = true
+# Default output format
+default_format = "markdown"
+
+[performance]
+# Memory optimization settings
+max_memory_mb = 500
+chunk_size = 1000
+enable_parallel = false
